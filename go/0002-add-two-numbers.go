@@ -7,7 +7,6 @@ import "fmt"
 type ListNode struct {
 	Val  int
 	Next *ListNode
-	Size int
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
@@ -46,13 +45,11 @@ func buildList(nums []int) *ListNode {
 	}
 
 	head := &ListNode{Val: nums[0]}
-	head.Size++
 	current := head
 
 	for _, num := range nums[1:] {
 		current.Next = &ListNode{Val: num}
 		current = current.Next
-		head.Size++
 	}
 
 	return head
