@@ -8,6 +8,8 @@
 *.so
 *.dylib
 
+test/
+
 target/
 
 # Test binary, built with `go test -c`
@@ -25,3 +27,8 @@ go.work.sum
 
 # env file
 .env
+
+
+# Added by cargo
+
+/target
